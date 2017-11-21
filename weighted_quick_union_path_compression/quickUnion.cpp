@@ -42,7 +42,7 @@ int quickUnion::qu_root(int i)
 {
 	while(i != id[i])
 	{
-		id[i] = id[id[i]];
+		id[i] = id[id[i]]; // every node of the path of i is attached to the root
 		i = id[i];
 	}
 	return i;

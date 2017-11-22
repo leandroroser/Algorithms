@@ -4,8 +4,8 @@
  *      Author: leandro
  */
 
-#ifndef SELECTIONSORT_H_
-#define SELECTIONSORT_H_
+#ifndef INSERTIONSORT_H_
+#define INSERTIONSORT_H_
 
 namespace _insertionSort {
 
@@ -24,4 +24,4 @@ private:
 
 } /* namespace _insertionSort */
 
-#endif /* SELECTIONSORT_H_ */
+#endif /* INSERTIONSORT_H_ */

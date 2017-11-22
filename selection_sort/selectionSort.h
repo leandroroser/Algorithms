@@ -13,8 +13,10 @@ class selectionSort {
 public:
 	selectionSort(int, int*);
 	virtual ~selectionSort();
+	void swap(int*, int*);
 	void sort();
 	int* find_min(int, int);
+	bool is_ordered();
 	void print_data();
 private:
 	int* data;

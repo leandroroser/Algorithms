@@ -16,13 +16,19 @@ int main()
 
 	// test function ordering an array
 
-    int myarray[] = {2, 53, 36, 7, 56};
-    selectionSort out(4, myarray);
+    int myarray[] = {2, 53, 36, 7, 56, 4};
+    selectionSort out(5, myarray);
     std::cout << "Unordered data" << std::endl;
     out.print_data();
+    std::cout << "Is ordered?" << std::endl;
+    std::cout << out.is_ordered() << std::endl;
+
     out.sort();
     std::cout << "Ordered data" << std::endl;
     out.print_data();
+
+    std::cout << "Is ordered?" << std::endl;
+    std::cout << out.is_ordered() << std::endl;
 
 	return 0;
 }

@@ -20,7 +20,6 @@ stack::~stack() {
 	for(int i = 0; i < n_elements; ++i)
 	{
 		next = head->get_next_node();
-		delete head->data;
 		delete head;
 		head = next;
 	}

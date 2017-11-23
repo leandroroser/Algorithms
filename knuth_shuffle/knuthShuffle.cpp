@@ -34,7 +34,10 @@ void knuthShuffle::shuffle()
 	int i = 0;
 		while (i < size)
 		{
-		   int random_int = std::rand() % (i+1);
+		   int random_int = std::rand() % (i+1); // 32 bit number, for
+		                                         // other application use
+		                                         // a different number generator
+		                                         // (e.g.,  std::mt19937_64)
 		   swap(data + random_int, data + i);
 		   i++;
 		}
